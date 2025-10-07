@@ -1,0 +1,70 @@
+/* Owner Dashboard - Hostels Management Styles */
+
+:root {
+  --brand-primary: #f83600;
+  --brand-secondary: #ff9800;
+  --bg-light: #f9f9f9;
+}
+
+.owner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.owner-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.owner-actions a {
+  display: inline-block;
+  padding: 10px 14px;
+  margin-left: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: var(--brand-primary);
+  color: #fff;
+}
+
+.table-wrap {
+  padding: 24px;
+}
+
+.hostels-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.hostels-table th, .hostels-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.hostels-table th {
+  background: #fafafa;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #eef2ff;
+  color: #4a6cf7;
+}
+
+.actions a {
+  margin-right: 8px;
+  text-decoration: none;
+  color: var(--brand-primary);
+}

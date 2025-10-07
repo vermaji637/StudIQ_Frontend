@@ -1,0 +1,153 @@
+/* ---------------- RESET & VARIABLES ---------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent: #f83600;
+  --card: #fff;
+  --bg: #f3f7fb;
+  --text: #030304;
+  --muted: #6b7280;
+  --shadow: rgba(8, 20, 40, 0.08);
+}
+
+/* ---------------- BASE ---------------- */
+html, body {
+  height: 100%;
+  font-family: "Inter", system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 240px;
+  background: rgba(178, 190, 196, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.sidebar .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.brand-logo {
+  width: 120px;      /* adjust size as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+
+.nav-list {
+  list-style: none;
+}
+.nav-list li {
+  margin-bottom: 8px;
+}
+.nav-list a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.nav-list li.active a,
+.nav-list a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ---------------- MAIN ---------------- */
+.main {
+  margin-left: 280px;
+  padding: 32px;
+  min-height: 100vh;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.page-header .subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ---------------- SERVICES ---------------- */
+.services-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 4px 16px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(8, 20, 40, 0.12);
+}
+
+.service-card img {
+  width: 120px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.service-info h4 {
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.service-info p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin: 12px;
+  }
+  .main {
+    margin-left: 0;
+    padding: 16px;
+  }
+  .service-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-card img {
+    width: 100%;
+    height: 160px;
+  }
+}

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>findly — Dashboard</title>
+  <link rel="stylesheet" href="../../css/userdashboard/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+  <img src="../../images/findly-logo.png" alt="Findly Logo" class="brand-logo" />
+</div>
+    <ul class="nav-list">
+      <li class="active"><a href="dashboardindex.html">Dashboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <div class="main">
+    <header class="page-header">
+      <h1>Dashboard</h1>
+    </header>
+
+    <main class="content">             
+    
+
+      <!-- Welcome / Profile Card -->
+      <section class="card welcome-card">
+  <div class="welcome-left">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80" 
+         class="avatar" alt="Vijay">
+  </div>
+  <div class="welcome-right">
+    <h2>Welcome back, Vijay</h2>
+    <p class="muted">Role: <strong>Student</strong> • +91 9876543210</p>
+<!-- profile score  -->
+     <div class="profile-progress">
+      <div class="progress-label">
+        Profile: <strong id="profile-percent">75%</strong>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width:75%"></div>
+      </div>
+    </div>
+<!-- buton      -->
+           <div class="actions" style="margin-top:12px;">
+      <button class="btn" onclick="window.location.href='profile.html'">View Profile</button>
+      <button class="btn" onclick="window.location.href='profile.html#edit'">Edit Profile</button>
+    </div>
+  </div>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-title">Total Bookings</div>
+          <div class="stat-value" id="stat-bookings">12</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Pending Payments</div>
+          <div class="stat-value" id="stat-pending">₹4,000</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Saved Services</div>
+          <div class="stat-value" id="stat-saved">3</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Notifications</div>
+          <div class="stat-value" id="stat-notif">1</div>
+        </div>
+      </section>
+
+      <div class="two-col">
+        <!-- Recent Bookings -->
+        <section class="card recent">
+          <h3>Recent Bookings</h3>
+          <table class="table" aria-label="Recent bookings">
+            <thead>
+              <tr><th scope="col">Service</th><th scope="col">Type</th><th scope="col">Date</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody id="bookings-body">
+              <tr>
+                <td>CozyStay</td>
+                <td>Hostel</td>
+                <td>2025-09-29</td>
+                <td><span class="pill completed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>TastyMess</td>
+                <td>Mess</td>
+                <td>2025-09-27</td>
+                <td><span class="pill pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>SmartLibrary</td>
+                <td>Library</td>
+                <td>2025-09-25</td>
+                <td><span class="pill completed">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="bookings.html" class="link">View all bookings →</a>
+        </section>
+
+        <!-- Recent Payments -->
+        <section class="card recent">
+          <h3>Recent Payments</h3>
+          <table class="table" aria-label="Recent payments">
+            <thead>
+              <tr><th scope="col">Date</th><th scope="col">Amount</th><th scope="col">Method</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody id="payments-body">
+              <tr><td>2024-04-20</td><td>₹5,000</td><td>UPI</td><td><span class="pill pending">Pending</span></td></tr>
+              <tr><td>2024-04-18</td><td>₹3,000</td><td>Credit Card</td><td><span class="pill completed">Completed</span></td></tr>
+              <tr><td>2024-04-15</td><td>₹2,500</td><td>Net Banking</td><td><span class="pill failed">Failed</span></td></tr>
+            </tbody>
+          </table>
+          <a href="payment.html" class="link">View all payments →</a>
+        </section>
+      </div>
+
+      <!-- Recommended Services -->
+      <section class="card">
+        <h3>Recommended Services</h3>
+        <div class="services-row" id="services-list">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Cozy Hostel">
+            <h4>Cozy Hostel</h4>
+            <p class="muted">₹4,000 / month • 4.5 ★</p>
+            <a href="services.html" class="btn small">View</a>
+          </div>
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="Green Stay">
+            <h4>Green Stay</h4>
+            <p class="muted">₹4,000 / month • 4.4 ★</p>
+            <a href="services.html" class="btn small">View</a>
+          </div>
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1505691723518-36a2a3c9a7a3?w=600&q=80" alt="Budget Inn">
+            <h4>Budget Inn</h4>
+            <p class="muted">₹3,500 / month • 4.1 ★</p>
+            <a href="services.html" class="btn small">View</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Actions & Notifications -->
+      <section class="card quick-actions">
+        <h3>Quick Actions</h3>
+        <div class="actions-row">
+          <button class="action-btn">🔍<span>Search Services</span></button>
+          <button class="action-btn">📝<span>New Booking</span></button>
+          <button class="action-btn">💳<span>Make Payment</span></button>
+          <button class="action-btn">📞<span>Contact Support</span></button>
+        </div>
+
+        <div class="notifications">
+          <h4>Notifications</h4>
+          <ul>
+            <li>Your hostel rent is due tomorrow</li>
+            <li>Profile 75% complete — add address info</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <!-- add this -->
+<!-- <script src="js/page-loader.js"></script>
+<script src="js/main.js"></script> -->
+
+</body>
+</html>
+
+

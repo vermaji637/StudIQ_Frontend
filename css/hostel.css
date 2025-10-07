@@ -4,7 +4,7 @@
 .hostel-listings {
   padding: 80px 20px;
   background: #fff;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .hostel-listings h2 {
@@ -63,8 +63,8 @@
 }
 
 .hostel-info h3 {
-  color: #f83600;
-  font-size: 20px;
+  /* color: #f83600; */
+  font-size: 26px;
   margin-bottom: 10px;
   font-weight: 700;
 }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Findly | Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Shared Navbar Styles -->
+  <link rel="stylesheet" href="css/navbar.css" />
+
+  <!-- Page-Specific Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/findly-logo.png" alt="Findly Logo" class="brand-logo">
+      </a>
+    </div>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Services ▼</a>
+        <div class="dropdown-content">
+          <a href="html/hostel-listing.html">Hostels</a>
+          <a href="html/mess.html">Mess</a>
+          <a href="html/coaching.html">Coaching</a>
+          <a href="html/colleges.html">Colleges</a>
+        </div>
+      </div>
+      <a href="html/contact.html">Contact</a>
+      <a href="html/ownerdashboard/hostels.html">Owner Dashboard</a>
+      <a href="html/signup.html" class="btn-nav">Signup / Login</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-heading">Welcome to <span class="brand-text">Findly</span></h1>
+      <form class="search-bar">
+        <input type="text" placeholder="Enter your location">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p class="services-subtitle">Choose what you need today ✨</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="service-icon fas fa-hotel"></i>
+        <h3>Hostels</h3>
+        <p>Find affordable and comfortable hostel stays near your campus or workplace.</p>
+        <a href="html/hostel-listing.html" class="btn-explore">Explore</a>
+      </div>
+
+      <div class="service-card">
+        <i class="service-icon fas fa-utensils"></i>
+        <h3>Mess</h3>
+        <p>Healthy and hygienic mess facilities with customizable meal plans.</p>
+        <a href="html/mess.html" class="btn-explore">Explore</a>
+      </div>
+
+      <div class="service-card">
+        <i class="service-icon fas fa-chalkboard-teacher"></i>
+        <h3>Coaching</h3>
+        <p>Top coaching classes to help you excel in academics and competitive exams.</p>
+        <a href="html/coaching.html" class="btn-explore">Explore</a>
+      </div>
+
+      <div class="service-card">
+        <i class="service-icon fas fa-university"></i>
+        <h3>Colleges</h3>
+        <p>Discover reputed colleges, compare courses, and apply easily online.</p>
+        <a href="html/colleges.html" class="btn-explore">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-grid">
+      <div class="how-card">
+        <i class="how-icon fas fa-search"></i>
+        <h3>Browse Services</h3>
+        <p>Explore hostels, mess, coaching, and colleges near you.</p>
+      </div>
+      <div class="how-card">
+        <i class="how-icon fas fa-user-plus"></i>
+        <h3>Sign Up & Book</h3>
+        <p>Create your account and book services easily.</p>
+      </div>
+      <div class="how-card">
+        <i class="how-icon fas fa-smile"></i>
+        <h3>Enjoy Your Stay</h3>
+        <p>Experience trusted and reliable services hassle-free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose">
+    <h2>Why Choose Findly</h2>
+    <div class="choose-grid">
+      <div class="choose-card">
+        <i class="fas fa-check-circle"></i>
+        <h3>Verified Listings</h3>
+        <p>All hostels, mess, coaching, and colleges are verified for authenticity.</p>
+      </div>
+      <div class="choose-card">
+        <i class="fas fa-key"></i>
+        <h3>Easy Signup</h3>
+        <p>Register in just a few steps and start exploring right away.</p>
+      </div>
+      <div class="choose-card">
+        <i class="fas fa-lock"></i>
+        <h3>Secure</h3>
+        <p>Your personal data is safe with industry-standard security.</p>
+      </div>
+      <div class="choose-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Affordable</h3>
+        <p>Find budget-friendly options without compromising on quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="images/user1.jpg" alt="User 1">
+        <h3>Rahul Sharma <span>Student</span></h3>
+        <p>"Findly made it so easy to find a hostel near my coaching. Totally hassle-free!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/user2.jpg" alt="User 2">
+        <h3>Ananya Gupta <span>Parent</span></h3>
+        <p>"I booked a safe hostel for my daughter through Findly. Trusted and reliable."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/user3.jpg" alt="User 3">
+        <h3>Rohit Verma <span>Professional</span></h3>
+        <p>"Affordable mess service that fits my job routine. Highly recommend Findly."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-cta">
+    <h2>Get in Touch</h2>
+    <p>Have questions or ready to join? We’d love to hear from you.</p>
+    <a href="html/signup.html" class="btn-cta">Join Findly Today</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Findly. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms</a> | 
+      <a href="html/contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -437,10 +437,72 @@ footer {
   color: #fff;
 }
 
-.footer-links a {
-  color: #ff9800;
-  margin: 0 5px;
-  text-decoration: none;
+  .footer-links a {
+    color: #ff9800;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover { text-decoration: underline; }
+
+/* ========================
+   Responsive Tweaks
+======================== */
+@media (max-width: 992px) {
+  header {
+    padding: 12px 24px;
+  }
+
+  .hero-heading {
+    font-size: 40px;
+  }
+
+  .hero-heading .brand-text {
+    font-size: 48px;
+  }
+
+  .search-bar {
+    width: 520px;
+    max-width: 92%;
+  }
 }
 
-.footer-links a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  nav {
+    gap: 10px;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 0 12px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  .hero-heading .brand-text {
+    font-size: 36px;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    padding: 10px 14px;
+  }
+
+  .services {
+    padding: 56px 16px;
+  }
+
+  .how-it-works {
+    padding: 32px 16px 56px;
+  }
+
+  .why-choose {
+    padding: 56px 16px;
+  }
+
+  .testimonials {
+    padding: 56px 16px;
+  }
+}
